@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webbutveckling Uppgift</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="main.js"></script>
+</head>
+<body>
+    <header class="navigation">
+        <nav>
+            <ul>
+                <li><a href="#home" class="link">Hem</a></li>
+                <li><a href="#" class="link">HTML</a></li>
+                <li><a href="#" class="link">CSS</a></li>
+                <li><a href="#" class="link">HUR MAN GÖR SIN EGEN HEMSIDA</a></li>
+            </ul>
+            <div class="theme-btns">
+                <button class="theme-btn light">Ljust Tema</button>
+                <button class="theme-btn dark">Mörkt tema</button>
+            </div>
+        </nav>
+    </header>
+    <div class="sec-container">
+
+        <section class="sec home-exception" id="home">
+            <div class="wrapper space-left-right">
+                <div class="left">
+                    <h1 class="primary-title">WEBBUTVECKLING<br>SLUTPROJEKT</h1>
+                    <p class="paragraph">Slutprojekt för kurs Webbutveckling 1. Innefattar utvecklad beskrivning och instruktioner för grundläggande bruk av HTML5 (Hyper Text Markup Language), CSS (Cascading Style Sheet) samt hur du brukar dessa tillsammans</p>
+                    <a href="#" class="btn btn-style-1">LÄS DEL 1</a>
+                </div>
+                <div class="right">
+                    <img src="./picture.png" alt="" class="image custom-size-1">
+                </div>
+            </div>
+        </section>
+        <section class="sec" id="html">
+            <div class="wrapper">
+                <div class="content">
+                    <h1 class="primary-title numprefix n-01">HTML</h1>
+                    <div class="large-card-group">
+                        <div class="card">
+                            <h2 class="card-title">TAGS</h2>
+                            <p class="card-desc paragraph">Tags, eller en tag, är en del av språket som indikerar början och slutet av ett HTML-element.  HTML-taggen &lt;html&gt; specificerar roten ur ett HTML dokument.</p>
+                        </div>
+                    </div>
+                    <div class="card-group">
+                        <div class="card-row">
+                            <div class="card">
+                                <h2 class="card-title">head</h2>
+                                <p class="card-desc paragraph">Head är huvuddelen av en hemsida och innehåller meta-datan av hemsidan. DVS. en mängd innehåll som inte visas på hemsidan utan fungerar i bakgrunden.</p>
+                            </div>
+                            <div class="card">
+                                <h2 class="card-title">meta charset</h2>
+                                <p class="card-desc paragraph">Meta charset attributet definierar hemsidans teckenkodning. Numera så brukas oftast UTF-8 vilket definieras som följande: <span>&lt;meta charset="utf-8"&gt;</span></p>
+                            </div>
+                            <div class="card">
+                                <h2 class="card-title">style</h2>
+                                <p class="card-desc paragraph">Style taggen definierar ett CSS-block där du kan ange CSS-attribut för dina HTML-element. Definierars som följande: <span>&lt;style&gt;&lt;/style&gt; &lt;style src=””&gt;&lt;/style&gt;</span></p>
+                            </div>
+                        </div>
+                        <div class="card-row">
+                            <div class="card">
+                                <h2 class="card-title">body</h2>
+                                <p class="card-desc paragraph">Body taggen definierar kroppen av ditt HTML dokument där du anger allt som sedan visas på din webbläsare. Anges som: &lt;body&gt;&lt;/body&gt;</p>
+                            </div>
+                            <div class="card">
+                                <h2 class="card-title">span</h2>
+                                <p class="card-desc paragraph">Span taggen är en inline-tag som inte har någon riktig betydelse utan brukas mest inuti andra taggar för enkel separering och formatering.</p>
+                            </div>
+                            <div class="card">
+                                <h2 class="card-title">div</h2>
+                                <p class="card-desc paragraph">En div definierar en sektion eller en behållare för andra element. Brukas mest för att separera delar av ditt dokument med andra delar.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="large-card-group">
+                        <div class="card">
+                            <h2 class="card-title">EXTRA TAGS</h2>
+                            <p class="card-desc paragraph">
+                                <span>table</span>
+                                En “table” eller “tabell” innefattar celler, rader, samt kolumner och brukas för att bilda tabeller.
+                                <span>h1-6</span>
+                                H, eller Heading Tag,  anger en titel.
+                                <span>p</span>
+                                P, eller Paragraph, anger paragrafer i html.
+                                <span>br</span>
+                                BR, eller break, anger linjebryte. Används sällan efter större utveckling av CSS.
+                                <span>a</span>
+                                a, eller hyperlink, anger länkar.
+                                <span>img</span>
+                                img, eller image, anger bilder.
+                                <span>ul, ol, li</span>
+                                ul, unordered list, ol, ordered list, li, list-item
+                                <span>section</span>
+                                Alternativ till div och anges för att definiera en sektion av din hemsida.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sec" id="css">
+            <div class="wrapper">
+                <div class="content">
+                    <h1 class="primary-title numprefix n-02">CSS</h1>
+                    <div class="large-card-group">
+                        <div class="card">
+                            <h2 class="card-title">HUR MAN ANVÄNDER CSS</h2>
+                            <p class="card-desc paragraph">Det finns flera sätt att bruka CSS, eller Cascading Style Sheet, men det allra bästa sätt är att skriva din css i en extern css fil.
+                                <span>&lt;link rel="stylesheet" href="style.css"&gt;</span></p>
+                        </div>
+                        <div class="card">
+                            <h2 class="card-title">SKILLNADER MELLAN HTML OCH CSS</h2>
+                            <p class="card-desc paragraph">CSS används för att bygga up utseendet på ditt HTML-dokument med hjälp av HTML-elementens attributer.</p>
+                        </div>
+                    </div>
+                    <div class="card-group">
+                        <div class="card-row">
+                            <div class="card">
+                                <h2 class="card-title">border</h2>
+                                <p class="card-desc paragraph">“Border” skapar en ram runt de element du anger. Border har följande egenskaper:<span>border-color, border-style, border width.</span></p>
+                            </div>
+                            <div class="card">
+                                <h2 class="card-title">color</h2>
+                                <p class="card-desc paragraph">“Color” anger färgen på en given text i format HEX, RGB, RGBA, HSL, HSLA, Color Keywords.</p>
+                            </div>
+                            <div class="card">
+                                <h2 class="card-title">alt-attributet</h2>
+                                <p class="card-desc paragraph">ALT-attributet till bilder (img) anger en alternativ text för screen-readers eller om bilden saknas.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="large-card-group">
+                        <div class="card">
+                            <h2 class="card-title">VIKTIGA CSS ENHETER</h2>
+                            <p class="card-desc paragraph">
+                                <span>ABSOLUTE UNITS</span>
+                                px, pt, in, cm, mm.
+                                <span>RELATIVE UNITS</span>
+                                em, rem, %, ex, ch, fr.
+                                <span>VIEWPORT UNITS</span>
+                                VW, VH, vmin, vmax </p>
+                        </div>
+                        <div class="card">
+                            <h2 class="card-title">RESPONSIV DESIGN</h2>
+                            <p class="card-desc paragraph">
+                                Responsiv design handlar om att se till att din hemsida fungerar för olika skärmstorlekar. Det kan definieras som följande.
+                                <span>
+                                    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                                </span> </p>
+                        </div>
+                    </div>
+                    <div class="large-card-group">
+                        <div class="card">
+                            <h2 class="card-title">POSITIONERING I CSS</h2>
+                            <p class="card-desc paragraph">
+                                Hur man positionerar element i CSS är väldigt debatterat och bör brukas olika i specifika fall.
+                        </div>
+                    </div>
+                    <div class="card-group">
+                        <div class="card-row">
+                            <div class="card">
+                                <h2 class="card-title">display: flex;</h2>
+                                <p class="card-desc paragraph">Flex, eller flexbox, positionering är baserat på elementets “children” alltså elementet inuti de element du sätter flexbox på. Flexbox är alltid relativt till föräldern.</p>
+                            </div>
+                            <div class="card">
+                                <h2 class="card-title">POSITION: RELATIVE;</h2>
+                                <p class="card-desc paragraph">Relativ position är baserat på avståndet från rotpositionen av elementet.</p>
+                            </div>
+                            <div class="card">
+                                <h2 class="card-title">POSITION: ABSOLUTE</h2>
+                                <p class="card-desc paragraph">Absolut position är det absoluta positionen av förälderns storlek.</p>
+                            </div>
+                        </div>
+                        <div class="card-row">
+                            <div class="card">
+                                <h2 class="card-title">POSITION: FIXED</h2>
+                                <p class="card-desc paragraph">Definierar en fixerad position baserat på webbläsarens storlek.</p>
+                            </div>
+                            <div class="card">
+                                <h2 class="card-title">MARGIN</h2>
+                                <p class="card-desc paragraph">Margin utgör avståndet utanför givet element och kan brukas för att bilda avstånd mellan element.</p>
+                            </div>
+                            <div class="card">
+                                <h2 class="card-title">PADDING</h2>
+                                <p class="card-desc paragraph">Padding utgör avståndet innanför givet element och kan brukas för att bilda avstånd inuti ett element.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sec" id="info">
+            <div class="wrapper">
+                <div class="content">
+                    <h1 class="primary-title numprefix n-03">ENKEL GUIDE</h1>
+                    <div class="large-card-group">
+                        <div class="card">
+                            <h2 class="card-title">LAGAR ATT HÅLLA KOLL PÅ</h2>
+                            <p class="card-desc paragraph">Det finns flera lagar som är värda att känna till för att se till att din hemsida görs på rätt sätt.</p>
+                        </div>
+                    </div>
+                    <div class="card-group">
+                        <div class="card-row">
+                            <div class="card">
+                                <h2 class="card-title">GDPR</h2>
+                                <p class="card-desc paragraph">Dataskyddsförordningen, eller allmänna dataskyddsförordningen, mest känd som GDPR, är en europeisk förordning som reglerar behandlingen av personuppgifter och det fria flödet av sådana uppgifter inom Europeiska unionen.
+                                    <a href="#">Läs mer här.</a></p>
+                            </div>
+                            <div class="card">
+                                <h2 class="card-title">Mjukvarupatent</h2>
+                                <p class="card-desc paragraph">Mjukvarupatent (även programvarupatent och IT-patent) är patent som omfattar datorprogram, algoritmer, affärsmetoder och liknande.[källa behövs] Foundation of a Free Information Infrastructure (FFII) föreslår att programvarupatent bör definieras som "patent på något som utförs av en dator med hjälp av ett datorprogram".[1] Programvarupatent i betydelsen IT-implementerade affärsmetoder är tillåtet i bland annat USA, men formellt inte tillåtet i Europa, men andra former av programvarupatent beviljas regelmässigt av europeiska patentverket EPO med stöd av traditionell patentlagstifning.[förtydliga] Ett omdebatterat direktivförslag i EU föreslog [när?] att programvarupatent även i betydelsen affärsmetoder skulle tillåtas, men förkastades av EU-parlamentet.
+                                    <a href="#">Läs mer här.</a></p>
+                            </div>
+                            <div class="card">
+                                <h2 class="card-title">LEK</h2>
+                                <p class="card-desc paragraph">Denna lag syftar dels till att enskilda och myndigheter ska få tillgång till säkra och effektiva elektroniska kommunikationer, dels till största möjliga utbyte för alla av elektroniska kommunikationstjänster sett till urvalet samt till deras pris, kvalitet och kapacitet.
+                                    <a href="#">Läs mer här.</a></p>
+                            </div>
+                        </div>
+                        <div class="card-row">
+                            <div class="card">
+                                <h2 class="card-title">URL</h2>
+                                <p class="card-desc paragraph">Upphovsrätt uppstår i samma stund som ett litterärt eller konstnärligt verk skapas. Därmed har skaparen, det vill säga upphovspersonen, ensamrätt att bestämma vem som får framställa exemplar av verket och hur eller om verket ska göras tillgängligt för allmänheten genom att till exempel publiceras på nätet eller spridas på annat sätt.
+                                    <a href="#">Läs mer här.</a></p>
+                            </div>
+                            <div class="card">
+                                <h2 class="card-title">span</h2>
+                                <p class="card-desc paragraph">Span taggen är en inline-tag som inte har någon riktig betydelse utan brukas mest inuti andra taggar för enkel separering och formatering.</p>
+                            </div>
+                            <div class="card">
+                                <h2 class="card-title">div</h2>
+                                <p class="card-desc paragraph">En div definierar en sektion eller en behållare för andra element. Brukas mest för att separera delar av ditt dokument med andra delar.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="large-card-group">
+                        <div class="card">
+                            <h2 class="card-title">EXTRA TAGS</h2>
+                            <p class="card-desc paragraph">
+                                <span>table</span>
+                                En “table” eller “tabell” innefattar celler, rader, samt kolumner och brukas för att bilda tabeller.
+                                <span>h1-6</span>
+                                H, eller Heading Tag,  anger en titel.
+                                <span>p</span>
+                                P, eller Paragraph, anger paragrafer i html.
+                                <span>br</span>
+                                BR, eller break, anger linjebryte. Används sällan efter större utveckling av CSS.
+                                <span>a</span>
+                                a, eller hyperlink, anger länkar.
+                                <span>img</span>
+                                img, eller image, anger bilder.
+                                <span>ul, ol, li</span>
+                                ul, unordered list, ol, ordered list, li, list-item
+                                <span>section</span>
+                                Alternativ till div och anges för att definiera en sektion av din hemsida.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>

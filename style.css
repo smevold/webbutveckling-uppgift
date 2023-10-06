@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/*
+font-family: 'Inter', sans-serif;
+font-family: 'Source Code Pro', monospace; 
+*/
+:root {
+    --accent: #8AFF80;
+    --w: #DBDBDB;
+    --w-80: #979797;
+    --bg-01: #141414;
+    --bg-02: #162314;
+    --stroke: #828181;
+    --default-margin: 18em;
+    --h1-fsz: 2.6rem;
+    --h2-fsz: 1.75rem;
+    --h3-fsz: 1.15rem;
+    --p-fsz: 0.9rem;
+    --code-fsz: 0.7rem;
+    --primary-font: 'Inter', sans-serif;
+    --code-font: 'Soruce Code Pro', monospace;
+    --border-radius: 3px;
+    --btn-link-fsz: 0.9rem;
+    --sec-top-bot-pad: 1em;
+}
+* {
+    font-family: var(--primary-font);
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+li, a, ul {
+    text-decoration: none;
+    color: unset;
+    list-style: none;
+    list-style-type: none;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(180deg, var(--bg-01), var(--bg-02));
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+    overflow-x: hidden;
+
+}
+
+.navigation {
+    position: sticky; 
+    top: 0px;
+    z-index: 1000;
+    left: 0;
+    width: 100%;
+    height: max-content;
+    padding: 1em;
+    background: var(--accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.navigation nav ul
+{
+    display: flex;
+    gap: 1em;
+}
+
+.navigation .theme-btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+.navigation .theme-btns button {
+    border: none;
+    outline: none;
+    background: var(--w);
+    border-radius: var(--border-radius);
+    padding: 0.5em;
+    margin-top: 0.5em;
+    cursor: pointer;
+    font-size: var(--btn-link-fsz);
+    color: var(--bg-01);
+    transition: opacity 0.5s ease;
+}
+.navigation ul li .link {
+    font-size: var(--btn-link-fsz);
+    color: var(--bg-01);
+    transition: opacity 0.5s ease;
+}
+
+.navigation ul li .link:hover, .navigation .theme-btns button:hover {
+    opacity: 0.7;
+}
+
+.sec-container {
+    margin-left: var(--default-margin);
+    margin-right: var(--default-margin);
+}
+
+.sec {
+    min-height: 70vh;
+    padding-bottom: var(--sec-top-bot-pad);
+    padding-top: var(--sec-top-bot-pad);
+    border-bottom: 1px solid var(--stroke);
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.sec.home-exception {
+    justify-content: center;
+}
+
+.sec .wrapper.space-left-right {
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+.sec .wrapper .right img {
+    width: 32em;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.sec .wrapper .left {
+    display: flex;
+    flex-direction: column;
+    gap: 0.85em;
+    justify-content: center;
+}
+
+.primary-title {
+    color: var(--w);
+    font-size: var(--h1-fsz);
+    font-weight: 900;
+}
+
+.paragraph {
+    color: var(--w-80);
+    font-size: var(--p-fsz);
+    max-width: 50em;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    background: var(--accent);
+    border-radius: var(--border-radius);
+    padding: 0.5em;
+    margin-top: 0.5em;
+    cursor: pointer;
+    font-size: var(--btn-link-fsz);
+    color: var(--bg-01);
+    transition: opacity 0.5s ease;
+    font-weight: 700;
+    width: max-content;
+}
+
+.btn:hover {
+    opacity: 0.7;
+}
+.sec .wrapper .content .primary-title.numprefix {
+    margin-top: 0.2em;
+}
+.sec .wrapper .content .primary-title.numprefix::before {
+    content: "01";
+    font-size: var(--p-fsz);
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 0.5em;
+    font-weight: 900;
+    color: var(--accent);
+}
+
+.content .large-card-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 2em;
+    width: 100%;
+}
+.content .large-card-group .card {
+    max-width: 50%;
+}
+.content .large-card-group .card-title {
+    font-size: var(--h2-fsz);
+    color: var(--w);
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.paragraph span {
+    font-family: var(--code-font);
+    font-size: var(--code-fsz);
+    color: var(--accent);
+    background: black;
+    white-space: nowrap;
+}
+
+.card-group .card-title {
+    font-size: var(--h3-fsz);
+    font-weight: 900;
+    color: var(--accent);
+    text-transform: lowercase;
+}
+
+.card-group {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+}
+
+.card-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+
+.sec .wrapper .content .primary-title.numprefix.n-01::before {
+    content: "01";
+}
+
+.sec .wrapper .content .primary-title.numprefix.n-02::before {
+    content: "02";
+}
+.sec .wrapper .content .primary-title.numprefix.n-03::before {
+    content: "03";
+}
+.sec .wrapper .content .primary-title.numprefix.n-04::before {
+    content: "04";
+}
+
+.card .paragraph{
+    font-size: calc(var(--p-fsz) - 0.25em);
+}
+
+.card .paragraph a {
+    font-size: calc(var(--p-fsz) - 0.35em);
+    color: blue;
+    text-decoration: underline;
+}
